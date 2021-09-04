@@ -1,0 +1,241 @@
+html {
+    background-image: url(wal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.block {
+    cursor: pointer;
+    /* 17% */
+    padding-top: 10%; 
+    /* 17% */
+    padding-bottom: 10%;
+
+    
+    margin: 25px;
+
+    height: 70px;
+    width: 300px;
+    
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+
+    box-shadow:-1px 2px 12px 2px rgba(0,0,0,0.66);
+    -webkit-box-shadow:-1px 2px 12px 2px rgba(0,0,0,0.66);
+    -moz-box-shadow:-1px 2px 12px 2px rgba(0,0,0,0.66);
+    position: relative;
+    z-index: 1;
+    bottom: 15%;
+    /* Чтоьбы не вылазил текст в блоках */
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+.allDiv {
+    margin: 0px auto;
+    height: 190px;
+    width: 350px;
+    position: relative;
+}
+
+.block:hover {
+
+    width: 60;
+    height: 300;
+    -webkit-box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+    -moz-box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+    box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+}
+
+/* Скрывает элемент при перетаскивание */
+.hide {
+    display: none;
+}
+
+/* Все кнопки на блоке */
+.allButton {
+    top: 16%;
+    left: 75%;
+    position: relative;
+    z-index: 2;
+    visibility: hidden;
+    width: 55px;
+}
+
+.allButton:hover~ .block {
+    cursor: pointer;
+    opacity: 0.5;
+    /* background-color: white; */
+}
+
+
+/* Текст на блоке */
+.link {
+    color: white;
+    text-decoration:none;
+    font-size: 25px;
+    font-weight: 900;
+    position: relative;
+    bottom: 30%;
+    /* -webkit-text-fill-color: transparent; */
+    -webkit-text-stroke: 0.05em black;
+    font-family: Epidemic, sans-serif;
+    
+}
+
+/* Кнопка добавления блока */
+#addButtons {
+    background-image: url('add.png');
+    width: 56px;
+    height: 55px;
+    cursor: pointer;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: 2;
+}
+#addButtons:hover {
+    width: 60px;
+    height: 60px;
+}
+
+/* Сетка */
+.grid {
+    margin:  auto;
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px 350px;
+    width: 1750px;
+    position: relative;
+    bottom: 50%; 
+    z-index: 1;  
+    
+}
+
+#tabSettings {
+    width: 200px;
+    height: 100%;
+    background:white;
+    position: fixed;
+    z-index: 5;
+    top: 0%;
+    right: 0%;
+    text-align: center;
+    padding-top: 2%;
+    
+}
+
+#black {
+    position: absolute;
+    opacity: 0.6;
+    background-color: black;
+    width: 1000%;
+    height: 1000%;
+    z-index: 4;
+    left: 0%;
+    top: 0%;
+}
+
+#blackFolder {
+    
+    position: absolute;
+    width: 1000%;
+    height: 1000%;
+    z-index: 3;
+    left: 0%;
+    top: 0%;  	
+    background-image: url(wal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.h2Set {
+    margin: 0px;
+    text-align: left;
+    padding-left: 5%;
+}
+
+
+.importantButtons {
+    width: 100%;
+}
+
+
+.folder {
+    margin: 0% auto;
+    width: 1750px;
+    padding-bottom: 10%;
+    min-height: 80%;
+    position: relative;
+    z-index: 4;
+    display: grid;
+    
+    grid-template-columns: 350px 350px 350px 350px 350px;
+    -webkit-box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+    -moz-box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+    box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+}
+
+.folderBlock {
+    cursor: pointer;
+    /* 17% */
+    padding-top: 10%; 
+    /* 17% */
+    padding-bottom: 10%;
+
+
+    margin: 25px;
+
+    height: 70px;
+    width: 300px;
+    bottom: 15%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+
+    box-shadow:-1px 2px 12px 2px rgba(0,0,0,0.66);
+    -webkit-box-shadow:-1px 2px 12px 2px rgba(0,0,0,0.66);
+    -moz-box-shadow:-1px 2px 12px 2px rgba(0,0,0,0.66);
+    position: relative;
+    z-index: 1;
+
+    /* Чтоьбы не вылазил текст в блоках */
+    overflow: hidden;
+    word-wrap: break-word;
+    
+}
+
+
+.folderBlock:hover {
+    width: 60;
+    height: 300;
+    -webkit-box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+    -moz-box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+    box-shadow: 0px 0px 29px 11px rgba(49, 49, 49, 1);
+}
+
+
+#addFoldButton {
+    width: 56px;
+    height: 55px;
+    cursor: pointer;
+    position: fixed;
+    left: 1%;
+    top: 1%;
+    z-index: 4;
+}
+.hideGrid {
+    position: absolute;
+}

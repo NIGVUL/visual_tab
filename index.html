@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Табло</title>
+
+    <script src='app.js' async ></script>
+    <link rel="stylesheet" href="interface.css">
+    
+
+</head>
+
+
+<body>
+
+    <!-- Кнопка добавления -->
+    <div class='addButtons'>
+        <img id='foldButton' src='fold.png' (this) width='55' height='55' onclick=createFolder()>
+        <img id='addButton' src='add.png' (this) width='55' height='55' onclick=addInArrOrFold("ARRAY")>
+    </div>
+    <!-- Сетка с блоками -->
+    <div class='grid'></div>
+ 
+</body>
+
+</html>
+
