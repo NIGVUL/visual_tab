@@ -3,6 +3,8 @@
 * Open index.html 
 
 # About services
+The application was created to simplify the work with tabs (save, change)
+* Security ( I used localstorage for storage, so it's safe and you can move the config from localstorage to another browser or computer )
 * Only Javascript
 * Work with localstorage
 
